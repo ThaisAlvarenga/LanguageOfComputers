@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact NYU</title>
+
+</head>
+
+<body>
+    <p>
+
+        <a href="index.html">Home</a> ||
+        <a href="paris.html">NYU Shanghai</a> ||
+        <a href="shanghai.html">NYU Paris</a> ||
+        <a href="Accra.html">NYU Accra</a> ||
+        <a href="https://www.nyu.edu/"> NYU NY</a> ||
+        <a href="a1residents.html">A1 Residents</a>
+
+        <hr>
+
+        <p>
+            <img src="images/A1logo.png" width=20%> Please fill out this form to help you RA plan future floor events
+        </p>
+
+        <hr>
+
+        <!--alwaus name the server program with the same title as your html page-->
+        <form action="contact.py">
+            <p>fullname: <input type="text" name="fname" required></p>
+            <p>email: <input type="email" name="email" required></p>
+            <p>NYU password: <input type="password" name="password" required></p>
+            <p>
+                Academic Year:
+                <!--they all have to be the same nam because they are related-->
+                <input type="radio" name="level" value="freshman"> Freshman
+                <input type="radio" name="level" value="sophomore"> Sophomore
+                <input type="radio" name="level" value="junior"> Junior
+                <input type="radio" name="level" value="senior"> Senior
+            </p>
+
+            <p>
+                Select dietary preferences:
+                <input type="checkbox" name="dietary" value="glutenFree"> Gluten Free
+                <input type="checkbox" name="dietary" value="veg"> Vegetarian
+                <input type="checkbox" name="dietary" value="vegan"> Vegan
+                <input type="checkbox" name="dietary" value="pescatarian"> Pescatarian
+                <input type="checkbox" name="dietary" value="noPref"> No Preferences
+            </p>
+
+            <p>
+                Shirt Size:
+
+                <select name="shirtSize">
+                    <option value="extraLarge"> XL </option>
+                    <option value="large"> L </option>
+                    <option value="medium"> M </option>
+                    <option value="small"> S </option>
+                    <option value="extraSmall"> XS </option>
+                </select>
+
+            </p>
+
+            <p>
+                Date of arrival to campus:
+                <input type="date" name="date">
+            </p>
+
+            <p>
+                Prefered Shirt Color:
+                <input type="color" name="color">
+            </p>
+
+            <p>
+                From a scale of 1 to 5, how excited are you to live in A1? (1 NOT excited; 5 VERY excited)
+                <input type="number" name="excitementLevel" min="1" max="5">
+            </p>
+
+            <p>
+                Comments:
+                <textarea name="comment" rows=10 cols="70"></textarea>
+            </p>
+
+
+
+
+            <input type="submit"> <input type="reset" value="Cancel">
+
+        </form>
+    </p>
+
+</body>
+
+</html>
